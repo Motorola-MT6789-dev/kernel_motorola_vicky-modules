@@ -1,12 +1,8 @@
 OPTIM = -Os
 
-ifeq ($(MTK_PLATFORM),mt6855)
-	PVR_ARCH := volcanic
-	CONFIG_MACH_MT6855 := y
-else ifeq ($(MTK_PLATFORM),mt6761)
-	PVR_ARCH := rogue
-	CONFIG_MACH_MT6761 := y
-endif
+MTK_PLATFORM := MT6789
+PVR_ARCH := volcanic
+CONFIG_MACH_MT6789 := y
 
 ccflags-$(CONFIG_MTK_TINYSYS_SSPM_SUPPORT) += -DSSPM_DEBUG
 
