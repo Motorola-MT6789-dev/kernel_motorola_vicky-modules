@@ -1,4 +1,4 @@
-DLKM_DIR := motorola/kernel/modules
+DLKM_DIR := vendor/motorola
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(AW96XX_MTK_CHARGER),true)

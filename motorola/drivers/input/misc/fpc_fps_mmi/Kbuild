@@ -1,6 +1,6 @@
 # add -Wall to try to catch everything we can.
 EXTRA_CFLAGS += -Wall
-EXTRA_CFLAGS += -I$(TOP)/motorola/kernel/modules/include
+EXTRA_CFLAGS += -I$(TOP)/vendor/motorola/include
 
 ifeq ($(FPC_TEE_BOOST), y)
 	EXTRA_CFLAGS += -I$(TOP)/kernel-4.19/drivers/tee/gud/500/MobiCoreDriver/public

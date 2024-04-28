@@ -1,8 +1,8 @@
 # add -Wall to try to catch everything we can.
 EXTRA_CFLAGS += -Wall
-EXTRA_CFLAGS += -I$(TOP)/motorola/kernel/modules/include \
-		-I$(TOP)/motorola/kernel/modules/drivers/input/touchscreen/ilitek_mtk_v3_mmi \
-		-I$(TOP)/motorola/kernel/modules/drivers/input/touchscreen/ilitek_mtk_v3_mmi/firmware
+EXTRA_CFLAGS += -I$(TOP)/vendor/motorola/include \
+		-I$(TOP)/vendor/motorola/drivers/input/touchscreen/ilitek_mtk_v3_mmi \
+		-I$(TOP)/vendor/motorola/drivers/input/touchscreen/ilitek_mtk_v3_mmi/firmware
 
 ifneq ($(filter m y,$(CONFIG_ILITEK_CHARGE_DETECT)),)
 EXTRA_CFLAGS += -DILI_CONFIG_CHARGE_DETECT

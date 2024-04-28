@@ -1,4 +1,4 @@
-DLKM_DIR := motorola/kernel/modules
+DLKM_DIR := vendor/motorola
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(CONFIG_INPUT_FB_PANEL), true)

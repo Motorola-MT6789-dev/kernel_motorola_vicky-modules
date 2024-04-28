@@ -1,7 +1,7 @@
 # add -Wall to try to catch everything we can.
 EXTRA_CFLAGS += -Wall
-EXTRA_CFLAGS += -I$(TOP)/motorola/kernel/modules/include \
-		-I$(TOP)/motorola/kernel/modules/drivers/input/touchscreen/synaptics_mmi_class
+EXTRA_CFLAGS += -I$(TOP)/vendor/motorola/include \
+		-I$(TOP)/vendor/motorola/drivers/input/touchscreen/synaptics_mmi_class
 
 ifneq ($(filter m y,$(CONFIG_INPUT_TOUCHSCREEN_MMI)),)
 EXTRA_CFLAGS += -DCONFIG_INPUT_TOUCHSCREEN_MMI -DCONFIG_PANEL_NOTIFICATIONS

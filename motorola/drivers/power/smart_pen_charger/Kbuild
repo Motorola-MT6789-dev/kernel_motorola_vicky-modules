@@ -2,9 +2,9 @@
 EXTRA_CFLAGS += -Wall
 EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/kernel-5.10/include
 EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/kernel-5.10/include/uapi/
-EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/motorola/kernel/modules/include \
+EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/vendor/motorola/include \
 		-I$(ANDROID_BUILD_TOP)/kernel-5.10/drivers/power/supply \
-		-I$(ANDROID_BUILD_TOP)/motorola/kernel/modules/drivers/power/smart_pen_charger
+		-I$(ANDROID_BUILD_TOP)/vendor/motorola/drivers/power/smart_pen_charger
 
 obj-m += smart_pen_charger.o
 

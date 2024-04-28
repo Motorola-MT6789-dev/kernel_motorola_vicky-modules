@@ -1,6 +1,6 @@
 # add -Wall to try to catch everything we can.
 EXTRA_CFLAGS += -Wall
-EXTRA_CFLAGS += -I$(TOP)/motorola/kernel/modules/include
+EXTRA_CFLAGS += -I$(TOP)/vendor/motorola/include
 
 ifneq ($(filter m y,$(CONFIG_MTK_TPD_MULT_PANEL)),)
 	EXTRA_CFLAGS += -DTPD_MULT_PANEL

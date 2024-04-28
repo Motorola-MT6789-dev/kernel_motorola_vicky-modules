@@ -1,5 +1,5 @@
 ifeq ($(BOARD_HAS_FM_ELNA), true)
-DLKM_DIR := motorola/kernel/modules
+DLKM_DIR := vendor/motorola
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)

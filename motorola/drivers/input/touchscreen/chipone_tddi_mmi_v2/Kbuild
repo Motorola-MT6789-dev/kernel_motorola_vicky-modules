@@ -2,10 +2,10 @@
 EXTRA_CFLAGS += -Wall
 EXTRA_CFLAGS += \
 		-I$(ANDROID_BUILD_TOP)/kernel-5.10/drivers/gpu/drm/mediatek/mediatek_v2/
-EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/motorola/kernel/modules/include \
-		-I$(ANDROID_BUILD_TOP)/motorola/kernel/modules/drivers/sensors \
+EXTRA_CFLAGS += -I$(ANDROID_BUILD_TOP)/vendor/motorola/include \
+		-I$(ANDROID_BUILD_TOP)/vendor/motorola/drivers/sensors \
 		-I$(ANDROID_BUILD_TOP)/kernel-5.10/drivers/gpu/drm/ \
-		-I$(ANDROID_BUILD_TOP)/motorola/kernel/modules/drivers/input/touchscreen/chipone_tddi_mmi_v2
+		-I$(ANDROID_BUILD_TOP)/vendor/motorola/drivers/input/touchscreen/chipone_tddi_mmi_v2
 
 ifneq ($(filter icnl9922c,$(CONFIG_INPUT_CHIPONE_IC_NAME)),)
 	EXTRA_CFLAGS += -DCONFIG_CTS_IC_NAME_ICNL9922C
